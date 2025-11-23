@@ -62,3 +62,10 @@ alias vf='nvim $(find . -type f | fzf)'
 # open a folder (project)
 alias vp='nvim $(find . -type d | fzf)'
 
+export CHROME_EXECUTABLE=$(which brave)
+# Setting the Android SDK Path
+export ANDROID_HOME=$HOME/Android/Sdk
+
+# Adding the SDK tools to the PATH
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH="$PATH:$HOME/flutter/bin"
